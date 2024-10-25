@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A portal for dances, dance schools, teachers, and events">
+  <meta name="keywords" content="Dance, Dance Schools, Dance Teachers, Dance Events, Dance Portal">
+  <meta name="author" content="Your Company Name">
+  <title>Rueda</title>
+  <link rel="stylesheet" href="landing-page.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">Rueda</a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#dances">Dances</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#schools">Schools</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://i.ytimg.com/vi/Q0wyQKlCKrM/maxresdefault.jpg" alt="Dancers" class="hero-img">
+    <div class="hero-text">
+      <h1>Welcome to Rueda</h1>
+      <p>Explore dances, events, and teachers from all around the world.</p>
+    </div>
+  </section>
+
+  <!-- Grid Layout Section -->
+  <section class="grid-section">
+    <div class="grid">
+      <div class="grid-item" id="dances" onclick="showImages('dances-images')">
+        <img src="https://www.dirty-dancing.it/wp-content/uploads/2017/08/bachata-2.jpg" alt="Dances">
+        <div class="overlay">
+          <h2>Dances</h2>
+        </div>
+      </div>
+      <div class="grid-item" id="events" onclick="showImages('events-images')">
+        <img src="https://c8.alamy.com/compit/dn3n3m/il-popolo-cubano-e-turisti-ballare-la-salsa-in-un-bar-esterno-di-notte-trinidad-cuba-caraibi-america-latina-dn3n3m.jpg" alt="Events">
+        <div class="overlay">
+          <h2>Events</h2>
+        </div>
+      </div>
+      <div class="grid-item" id="schools" onclick="showImages('schools-images')">
+        <img src="https://stilldancing.fi/wp-content/uploads/2022/12/IMG-2830-1024x768.jpg" alt="Schools">
+        <div class="overlay">
+          <h2>Schools</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dances Images -->
+    <div class="image-gallery dances-images" id="dances-images">
+      <img src="https://www.dirty-dancing.it/wp-content/uploads/2017/08/bachata-2.jpg" alt="Dance 1">
+      <img src="https://angloamericanstudio.wordpress.com/wp-content/uploads/2016/05/flamenco.jpg" alt="Dance 2">
+      <img src="https://www.palestrebodystudio.it/wp-content/uploads/2019/08/tango-bohemio-tango-argentino-palestre-body-studio-art.jpg" alt="Dance 3">
+      <img src="https://www.palestrebodystudio.it/wp-content/uploads/2019/08/tango-bohemio-tango-argentino-palestre-body-studio-art.jpg" alt="Dance 4">
+      <img src="dance5.jpg" alt="Dance 5">
+    </div>
+
+    <!-- Events Images -->
+    <div class="image-gallery events-images" id="events-images">
+      <img src="event1.jpg" alt="Event 1">
+      <img src="event2.jpg" alt="Event 2">
+      <img src="event3.jpg" alt="Event 3">
+      <img src="event4.jpg" alt="Event 4">
+      <img src="event5.jpg" alt="Event 5">
+    </div>
+
+    <!-- Schools Images -->
+    <div class="image-gallery schools-images" id="schools-images">
+      <img src="school1.jpg" alt="School 1">
+      <img src="school2.jpg" alt="School 2">
+      <img src="school3.jpg" alt="School 3">
+      <img src="school4.jpg" alt="School 4">
+      <img src="school5.jpg" alt="School 5">
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section company-info">
+        <h3>Dance Portal</h3>
+        <p>Explore all kinds of dance-related events, teachers, and schools.</p>
+        <p>Contact: info@danceportal.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      
+      <div class="footer-section links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section social-media">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Rueda. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

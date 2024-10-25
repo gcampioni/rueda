@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212; /* Midnight black background */
+            color: #f7f7f7; /* Light text for contrast */
+        }
+
+        /* Header Section */
+        header {
+            background-color: #ff6b81; /* Fuchsia header */
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Lobster', cursive;
+            font-size: 36px;
+            letter-spacing: 1px;
+            color: #121212; /* Dark contrast for logo text */
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu a {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #00bcd4; /* Electric blue hover effect */
+            text-shadow: 0 0 8px rgba(0, 188, 212, 0.8); /* Neon glow */
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Lobster', cursive;
+            font-size: 48px;
+            color: #ff6b81; /* Fuchsia */
+            text-shadow: 0 0 10px rgba(255, 107, 129, 0.7);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1e1e1e; /* Very dark gray, almost black */
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin: 20px;
+            font-weight: 600;
+            color: #00bcd4; /* Electric blue */
+            text-shadow: 0 0 5px rgba(0, 188, 212, 0.8);
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 0 20px 20px;
+            color: #f7f7f7;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 20px 20px;
+            background-color: #ff6b81; /* Fuchsia button */
+            color: #1e1e1e; /* Dark contrast on button text */
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            text-shadow: 0 0 6px rgba(255, 107, 129, 0.6); /* Neon glow on button */
+        }
+
+        .card a:hover {
+            background-color: #00bcd4; /* Electric blue on hover */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Darker shadow */
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #0d0d0d; /* Even darker footer */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            font-size: 18px;
+            margin: 0 10px;
+            color: #f7f7f7;
+        }
+
+        .social-icons a:hover {
+            color: #ff6b81; /* Fuchsia hover effect */
+            text-shadow: 0 0 6px rgba(255, 107, 129, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">Rueda</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="schools.html">Schools</a>
+                <a href="#">Events</a>
+                <a href="#">Teachers</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-container">
+        <div class="section-title">Discover Dance Schools</div>
+
+        <div class="gallery-grid">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_nXkcB4qM6nliRzCFT57ePBsjY821vTQ_LBTZQ0-kkR8Q=s900-c-k-c0x00ffffff-no-rj" alt="School 1">
+                <h3>Mr Daniel - Castelli Romani (RM)</h3>
+                <p>Master Caribbean beats like salsa, reggaeton, and zouk. Located in Miami.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://www.saidovesiballa.com/immaginiprofilo/thumb/sid5142-1470012430.jpg" alt="School 2">
+                <h3>Daily Dance - L'Aquila (AQ)</h3>
+                <p>Learn Salsa and Bachata with top instructors. Based in Los Angeles.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://www.saidovesiballa.com/immaginiprofilo/thumb/sid2425-1315770933.jpg" alt="School 3">
+                <h3>Istinto Tango - Avezzano (AQ)</h3>
+                <p>Unleash your passion with Latin dance styles in the heart of NYC.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://www.saidovesiballa.com/immaginiprofilo/thumb/sid3676-1377274411.jpg" alt="School 4">
+                <h3>Alma Salsera - Lanciano (CH)</h3>
+                <p>Explore Afro-Caribbean rhythms with a soulful touch. Located in Havana.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Add more cards as needed -->
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Rueda. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
