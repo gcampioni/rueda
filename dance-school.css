@@ -1,0 +1,238 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #f0b400; /* Gold accent color */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+/* Mobile Menu */
+@media only screen and (max-width: 768px) {
+  .hamburger {
+      display: flex;
+  }
+
+  .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .menu.active {
+      display: flex;
+  }
+
+  .menu ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .menu ul li {
+      padding: 10px 0;
+  }
+
+  .menu ul li a {
+      font-size: 20px;
+  }
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Dance School Section */
+.dance-school {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.school-header {
+  margin-bottom: 40px;
+}
+
+.school-logo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.school-description {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #f0f0f0;
+}
+
+/* Gallery Section */
+.school-gallery {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.school-gallery h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f0b400; /* Gold accent color */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #f0b400;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f0b400;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive Grid and Footer */
+@media only screen and (max-width: 600px) {
+  .gallery-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+}
