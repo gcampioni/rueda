@@ -28,6 +28,6 @@ document.querySelectorAll('.grid-item').forEach((item, index) => {
         showImages(`grid-gallery-${index}`);
 
         // Redirect to dance school page
-        window.location.href = 'dance-school.html';
+        window.location.href = 'dance-school-gallery.html';
     });
 });
